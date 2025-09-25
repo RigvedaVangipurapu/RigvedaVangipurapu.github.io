@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Reads - Rigveda Vangipurapu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .fun-reads {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+        .fun-reads-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .fun-reads-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        .fun-reads-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 40px;
+            transition: color 0.3s ease;
+        }
+        .back-to-blog:hover {
+            color: #4f46e5;
+        }
+        .fun-reads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .fun-read-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .fun-read-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .fun-read-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .fun-read-icon i {
+            font-size: 24px;
+            color: white;
+        }
+        .fun-read-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        .fun-read-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .fun-read-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .fun-read-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .fun-read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .fun-read-link:hover {
+            color: #4f46e5;
+        }
+        .featured-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        .featured-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .featured-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #475569;
+        }
+        .featured-content h3 {
+            color: #1e293b;
+            margin: 25px 0 15px;
+        }
+        .featured-content ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        .featured-content li {
+            margin-bottom: 8px;
+        }
+        .code-snippet {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">RV</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fun Reads Section -->
+    <section class="fun-reads">
+        <div class="container">
+            <a href="index.html#blog" class="back-to-blog">
+                <i class="fas fa-arrow-left"></i>
+                Back to Blog
+            </a>
+            
+            <div class="fun-reads-header">
+                <h1 class="fun-reads-title">Fun Reads</h1>
+                <p class="fun-reads-subtitle">
+                    A curated collection of interesting articles, resources, and discoveries 
+                    from the world of AI, technology, and beyond.
+                </p>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="featured-section">
+                <h2 class="featured-title">
+                    <i class="fas fa-star" style="color: #fbbf24;"></i>
+                    Featured Discovery
+                </h2>
+                <div class="featured-content">
+                    <h3>System Prompts and Models of AI Tools Repository</h3>
+                    <p>
+                        I recently discovered this fascinating GitHub repository that contains over 20,000+ lines 
+                        of system prompts and AI model configurations from various AI tools and platforms. 
+                        It's like getting a behind-the-scenes look at how different AI systems are instructed to behave.
+                    </p>
+                    
+                    <h3>Why This is Fascinating:</h3>
+                    <ul>
+                        <li><strong>Transparency:</strong> See exactly how tools like Cursor, Devin AI, and Claude Code are prompted</li>
+                        <li><strong>Learning:</strong> Understand advanced prompt engineering techniques used in production</li>
+                        <li><strong>Inspiration:</strong> Get ideas for your own AI applications and prompt strategies</li>
+                        <li><strong>Best Practices:</strong> Learn from proven approaches used by successful AI tools</li>
+                    </ul>
+
+                    <p>
+                        The repository includes system prompts from tools like:
+                    </p>
+                    <div class="code-snippet">
+                        • Cursor AI<br>
+                        • Devin AI<br>
+                        • Claude Code<br>
+                        • VSCode Agent<br>
+                        • Windsurf<br>
+                        • Perplexity<br>
+                        • And many more...
+                    </div>
+
+                    <p>
+                        As someone working on AI-powered projects like my MCP Calendar Agent and Job Search Assistant, 
+                        this resource has been incredibly valuable for understanding how to structure effective prompts 
+                        and improve AI interactions.
+                    </p>
+
+                    <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" 
+                       class="fun-read-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        Explore the Repository
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fun Reads Grid -->
+            <div class="fun-reads-grid">
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="fun-read-title">Geoffrey Huntley's Blog</h3>
+                    <p class="fun-read-description">
+                        I absolutely love Geoffrey's writing style and his fascinating articles on AI, 
+                        coding agents, and the future of software development. His posts like "i ran Claude 
+                        in a loop for three months" and "AI coding tools are perhaps our new terminal emulators" 
+                        are both insightful and entertaining.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">AI</span>
+                        <span class="fun-read-tag">Coding</span>
+                        <span class="fun-read-tag">Writing</span>
+                    </div>
+                    <a href="https://ghuntley.com/" class="fun-read-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Blog
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="fun-read-title">AI Prompt Engineering Guide</h3>
+                    <p class="fun-read-description">
+                        A comprehensive guide to writing effective prompts for AI models, 
+                        covering techniques from basic to advanced prompt engineering strategies.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">AI</span>
+                        <span class="fun-read-tag">Prompt Engineering</span>
+                        <span class="fun-read-tag">Guide</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="fun-read-title">Data Visualization Best Practices</h3>
+                    <p class="fun-read-description">
+                        Learn how to create compelling and effective data visualizations 
+                        that tell clear stories and drive decision-making.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">Data Viz</span>
+                        <span class="fun-read-tag">Analytics</span>
+                        <span class="fun-read-tag">Design</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="fun-read-title">Modern Python Patterns</h3>
+                    <p class="fun-read-description">
+                        Discover elegant Python patterns and techniques that can make your code 
+                        more readable, maintainable, and efficient.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">Python</span>
+                        <span class="fun-read-tag">Programming</span>
+                        <span class="fun-read-tag">Patterns</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="fun-read-title">Product Management in Tech</h3>
+                    <p class="fun-read-description">
+                        Insights into effective product management strategies, 
+                        stakeholder communication, and roadmap planning in technology companies.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">Product</span>
+                        <span class="fun-read-tag">Management</span>
+                        <span class="fun-read-tag">Strategy</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="fun-read-title">Snowflake Optimization Tips</h3>
+                    <p class="fun-read-description">
+                        Practical tips for optimizing Snowflake queries and warehouse performance, 
+                        based on real-world experience with large-scale data processing.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">Snowflake</span>
+                        <span class="fun-read-tag">SQL</span>
+                        <span class="fun-read-tag">Performance</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="fun-read-card">
+                    <div class="fun-read-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="fun-read-title">Innovation in Analytics</h3>
+                    <p class="fun-read-description">
+                        Exploring how AI and machine learning are transforming traditional 
+                        analytics workflows and creating new opportunities for insights.
+                    </p>
+                    <div class="fun-read-tags">
+                        <span class="fun-read-tag">Innovation</span>
+                        <span class="fun-read-tag">Analytics</span>
+                        <span class="fun-read-tag">Future</span>
+                    </div>
+                    <a href="#" class="fun-read-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p style="color: #64748b; font-size: 1.1rem; margin-bottom: 30px;">
+                    More interesting reads coming soon! I'm always discovering new resources 
+                    and insights to share.
+                </p>
+                <a href="index.html#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Suggest a Read
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rigveda Vangipurapu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

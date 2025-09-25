@@ -405,6 +405,46 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
+.blog-image {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.blog-image i {
+    font-size: 24px;
+    color: white;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blog-link {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+    color: #4f46e5;
+}
+
 .blog-meta {
     display: flex;
     gap: 15px;
