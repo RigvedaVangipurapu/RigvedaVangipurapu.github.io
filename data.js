@@ -45,7 +45,7 @@ const projectsData = [
         "featured": true
     },
     {
-        "id": 4,
+        "id": 7,
         "title": "Neural Networks Course",
         "description": "Implementation of Andrej Karpathy's neural networks course, featuring hands-on projects in deep learning, backpropagation, and modern AI architectures.",
         "technologies": [
@@ -87,7 +87,7 @@ const projectsData = [
         "featured": true
     },
     {
-        "id": 7,
+        "id": 4,
         "title": "portfolio agent",
         "description": "CI/CD agent that auto-syncs your GitHub projects to your portfolio - push code, portfolio updates itself",
         "technologies": [],
