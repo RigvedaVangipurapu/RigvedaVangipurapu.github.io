@@ -89,7 +89,7 @@ const projectsData = [
     {
         "id": 7,
         "title": "portfolio agent",
-        "description": "",
+        "description": "CI/CD agent that auto-syncs your GitHub projects to your portfolio - push code, portfolio updates itself",
         "technologies": [],
         "githubUrl": "https://github.com/RigvedaVangipurapu/portfolio-agent",
         "demoUrl": "",
