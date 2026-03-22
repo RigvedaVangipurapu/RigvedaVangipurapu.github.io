@@ -6,7 +6,11 @@ const projectsData = [
         "id": 1,
         "title": "MCP AI Calendar Agent",
         "description": "An intelligent calendar management system using Model Context Protocol (MCP) to automate scheduling, meeting coordination, and calendar optimization with AI-powered insights.",
-        "technologies": ["Python", "AI/ML", "MCP"],
+        "technologies": [
+            "Python",
+            "AI/ML",
+            "MCP"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/MCP-AI-Calendar-Agent",
         "demoUrl": "",
         "icon": "fas fa-robot",
@@ -16,7 +20,11 @@ const projectsData = [
         "id": 2,
         "title": "Job Search Assistant",
         "description": "An AI-powered job search automation tool that monitors career boards, analyzes job postings, and helps optimize application strategies for better success rates.",
-        "technologies": ["Python", "Web Scraping", "AI"],
+        "technologies": [
+            "Python",
+            "Web Scraping",
+            "AI"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/Job-Search-Assistant-2",
         "demoUrl": "",
         "icon": "fas fa-search",
@@ -26,7 +34,11 @@ const projectsData = [
         "id": 3,
         "title": "Air Quality Analytics",
         "description": "Comprehensive data analysis project processing air quality datasets to identify patterns, trends, and correlations using advanced statistical methods and visualization techniques.",
-        "technologies": ["Python", "Data Analysis", "Visualization"],
+        "technologies": [
+            "Python",
+            "Data Analysis",
+            "Visualization"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/Air-Quality-Analytics",
         "demoUrl": "",
         "icon": "fas fa-chart-bar",
@@ -36,7 +48,11 @@ const projectsData = [
         "id": 4,
         "title": "Neural Networks Course",
         "description": "Implementation of Andrej Karpathy's neural networks course, featuring hands-on projects in deep learning, backpropagation, and modern AI architectures.",
-        "technologies": ["Python", "Neural Networks", "Deep Learning"],
+        "technologies": [
+            "Python",
+            "Neural Networks",
+            "Deep Learning"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/Neural-Networks-course",
         "demoUrl": "",
         "icon": "fas fa-brain",
@@ -46,7 +62,11 @@ const projectsData = [
         "id": 5,
         "title": "Stack Overflow Data Analysis",
         "description": "Large-scale data processing project using Spark for data ingestion, cleaning, and SQL querying to extract meaningful insights from Stack Overflow's massive XML datasets.",
-        "technologies": ["Spark", "SQL", "Big Data"],
+        "technologies": [
+            "Spark",
+            "SQL",
+            "Big Data"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/Stack-Overflow-Data-Analysis",
         "demoUrl": "",
         "icon": "fas fa-database",
@@ -56,10 +76,24 @@ const projectsData = [
         "id": 6,
         "title": "Secure File Sharing Application",
         "description": "A secure file sharing platform with encryption, access controls, and audit trails, built with Python and modern security best practices.",
-        "technologies": ["Python", "Security", "Encryption"],
+        "technologies": [
+            "Python",
+            "Security",
+            "Encryption"
+        ],
         "githubUrl": "https://github.com/RigvedaVangipurapu/Secure-File-Sharing-application",
         "demoUrl": "",
         "icon": "fas fa-shield-alt",
+        "featured": true
+    },
+    {
+        "id": 7,
+        "title": "portfolio agent",
+        "description": "",
+        "technologies": [],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/portfolio-agent",
+        "demoUrl": "",
+        "icon": "fas fa-code",
         "featured": true
     }
 ];
