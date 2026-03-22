@@ -1,3 +1,32 @@
+// Render projects from data.js
+function renderProjects() {
+    const grid = document.getElementById('projects-grid');
+    if (!grid || typeof projectsData === 'undefined') return;
+
+    grid.innerHTML = projectsData.map(project => `
+        <div class="project-card">
+            <div class="project-image">
+                <i class="${project.icon}"></i>
+            </div>
+            <div class="project-content">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="project-tech">
+                    ${project.technologies.map(t => `<span>${t}</span>`).join('')}
+                </div>
+                <div class="project-links">
+                    <a href="${project.githubUrl}" class="project-link">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    ${project.demoUrl ? `<a href="${project.demoUrl}" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>` : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+document.addEventListener('DOMContentLoaded', renderProjects);
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');

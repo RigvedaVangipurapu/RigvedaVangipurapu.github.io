@@ -1,44 +1,66 @@
 // Projects Data
+// NOTE: This array is managed automatically by the portfolio sync workflow.
+// Keep values JSON-compatible (double quotes, no trailing commas).
 const projectsData = [
     {
-        id: 1,
-        title: "E-Commerce Platform",
-        description: "A full-stack e-commerce solution built with React and Node.js, featuring real-time inventory management and secure payment processing.",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/yourusername/ecommerce-platform",
-        demoUrl: "https://your-demo-url.com",
-        icon: "fas fa-laptop-code",
-        featured: true
+        "id": 1,
+        "title": "MCP AI Calendar Agent",
+        "description": "An intelligent calendar management system using Model Context Protocol (MCP) to automate scheduling, meeting coordination, and calendar optimization with AI-powered insights.",
+        "technologies": ["Python", "AI/ML", "MCP"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/MCP-AI-Calendar-Agent",
+        "demoUrl": "",
+        "icon": "fas fa-robot",
+        "featured": true
     },
     {
-        id: 2,
-        title: "Task Management App",
-        description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-        technologies: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-        githubUrl: "https://github.com/yourusername/task-manager",
-        demoUrl: "https://your-task-app-demo.com",
-        icon: "fas fa-mobile-alt",
-        featured: true
+        "id": 2,
+        "title": "Job Search Assistant",
+        "description": "An AI-powered job search automation tool that monitors career boards, analyzes job postings, and helps optimize application strategies for better success rates.",
+        "technologies": ["Python", "Web Scraping", "AI"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Job-Search-Assistant-2",
+        "demoUrl": "",
+        "icon": "fas fa-search",
+        "featured": true
     },
     {
-        id: 3,
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard for analyzing business metrics with customizable charts, filters, and real-time data updates.",
-        technologies: ["D3.js", "Python", "Flask", "Chart.js"],
-        githubUrl: "https://github.com/yourusername/data-dashboard",
-        demoUrl: "https://your-dashboard-demo.com",
-        icon: "fas fa-chart-line",
-        featured: true
+        "id": 3,
+        "title": "Air Quality Analytics",
+        "description": "Comprehensive data analysis project processing air quality datasets to identify patterns, trends, and correlations using advanced statistical methods and visualization techniques.",
+        "technologies": ["Python", "Data Analysis", "Visualization"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Air-Quality-Analytics",
+        "demoUrl": "",
+        "icon": "fas fa-chart-bar",
+        "featured": true
     },
     {
-        id: 4,
-        title: "Portfolio Website",
-        description: "A responsive portfolio website built with vanilla HTML, CSS, and JavaScript, featuring a clean and minimalistic design.",
-        technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-        githubUrl: "https://github.com/yourusername/portfolio",
-        demoUrl: "https://your-portfolio.com",
-        icon: "fas fa-code",
-        featured: false
+        "id": 4,
+        "title": "Neural Networks Course",
+        "description": "Implementation of Andrej Karpathy's neural networks course, featuring hands-on projects in deep learning, backpropagation, and modern AI architectures.",
+        "technologies": ["Python", "Neural Networks", "Deep Learning"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Neural-Networks-course",
+        "demoUrl": "",
+        "icon": "fas fa-brain",
+        "featured": true
+    },
+    {
+        "id": 5,
+        "title": "Stack Overflow Data Analysis",
+        "description": "Large-scale data processing project using Spark for data ingestion, cleaning, and SQL querying to extract meaningful insights from Stack Overflow's massive XML datasets.",
+        "technologies": ["Spark", "SQL", "Big Data"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Stack-Overflow-Data-Analysis",
+        "demoUrl": "",
+        "icon": "fas fa-database",
+        "featured": true
+    },
+    {
+        "id": 6,
+        "title": "Secure File Sharing Application",
+        "description": "A secure file sharing platform with encryption, access controls, and audit trails, built with Python and modern security best practices.",
+        "technologies": ["Python", "Security", "Encryption"],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Secure-File-Sharing-application",
+        "demoUrl": "",
+        "icon": "fas fa-shield-alt",
+        "featured": true
     }
 ];
 
