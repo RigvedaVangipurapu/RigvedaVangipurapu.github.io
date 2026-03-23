@@ -44,20 +44,17 @@ const projectsData = [
         "icon": "fas fa-chart-bar",
         "featured": true
     },
-    {
-        "id": 7,
-        "title": "Neural Networks Course",
-        "description": "Implementation of Andrej Karpathy's neural networks course, featuring hands-on projects in deep learning, backpropagation, and modern AI architectures.",
-        "technologies": [
-            "Python",
-            "Neural Networks",
-            "Deep Learning"
-        ],
-        "githubUrl": "https://github.com/RigvedaVangipurapu/Neural-Networks-course",
+        {
+        "id": 4,
+        "title": "portfolio agent",
+        "description": "CI/CD agent that auto-syncs your GitHub projects to your portfolio - push code, portfolio updates itself",
+        "technologies": [],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/portfolio-agent",
         "demoUrl": "",
-        "icon": "fas fa-brain",
+        "icon": "fas fa-code",
         "featured": true
     },
+
     {
         "id": 5,
         "title": "Stack Overflow Data Analysis",
@@ -86,16 +83,22 @@ const projectsData = [
         "icon": "fas fa-shield-alt",
         "featured": true
     },
-    {
-        "id": 4,
-        "title": "portfolio agent",
-        "description": "CI/CD agent that auto-syncs your GitHub projects to your portfolio - push code, portfolio updates itself",
-        "technologies": [],
-        "githubUrl": "https://github.com/RigvedaVangipurapu/portfolio-agent",
+
+        {
+        "id": 7,
+        "title": "Neural Networks Course",
+        "description": "Implementation of Andrej Karpathy's neural networks course, featuring hands-on projects in deep learning, backpropagation, and modern AI architectures.",
+        "technologies": [
+            "Python",
+            "Neural Networks",
+            "Deep Learning"
+        ],
+        "githubUrl": "https://github.com/RigvedaVangipurapu/Neural-Networks-course",
         "demoUrl": "",
-        "icon": "fas fa-code",
+        "icon": "fas fa-brain",
         "featured": true
     }
+
 ];
 
 // Blog Posts Data
